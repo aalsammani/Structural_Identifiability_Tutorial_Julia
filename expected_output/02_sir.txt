@@ -1,0 +1,21 @@
+[ Info: Summary of the model:
+[ Info: State variables: S, I, R
+[ Info: Parameters: beta, gamma
+[ Info: Inputs: 
+[ Info: Outputs: y
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+SIR, y = beta*S*I: global identifiability
+========================================================================
+  S(t)                         => globally
+  I(t)                         => globally
+  R(t)                         => nonidentifiable
+  beta                         => globally
+  gamma                        => globally
+
+========================================================================
+SIR, y = beta*S*I: identifiable functions
+========================================================================
+  gamma
+  beta

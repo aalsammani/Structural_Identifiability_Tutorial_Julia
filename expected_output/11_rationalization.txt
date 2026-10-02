@@ -1,0 +1,28 @@
+[ Info: Summary of the model:
+[ Info: State variables: C, x
+[ Info: Parameters: alpha
+[ Info: Inputs: 
+[ Info: Outputs: y
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+GGM, lifting x = r*C^alpha: global identifiability
+========================================================================
+  C(t)                         => globally
+  x(t)                         => globally
+  alpha                        => globally
+
+========================================================================
+GGM, lifting w = C^alpha: global identifiability
+========================================================================
+  C(t)                         => globally
+  w(t)                         => nonidentifiable
+  alpha                        => globally
+  r                            => nonidentifiable
+
+========================================================================
+GGM, lifting w = C^alpha: identifiable functions (with states)
+========================================================================
+  alpha
+  C(t)
+  w(t)*r

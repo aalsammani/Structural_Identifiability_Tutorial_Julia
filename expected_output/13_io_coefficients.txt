@@ -1,0 +1,28 @@
+[ Info: Summary of the model:
+[ Info: State variables: x
+[ Info: Parameters: a
+[ Info: Inputs: 
+[ Info: Outputs: y1, y2
+┌ Warning: One of the Wronskians has corank greater than one, so the results of the algorithm will be valid only for multiexperiment identifiability. If you still would like to assess single-experiment identifiability, we recommend using SIAN (https://github.com/alexeyovchinnikov/SIAN-Julia) or transforming all the parameters to states with zero derivative
+└ @ StructuralIdentifiability C:\Users\abdallah\.julia\packages\StructuralIdentifiability\p9gdd\src\global_identifiability.jl:121
+┌ Warning: One of the Wronskians has corank greater than one, so the results of the algorithm will be valid only for multiexperiment identifiability. If you still would like to assess single-experiment identifiability, we recommend using SIAN (https://github.com/alexeyovchinnikov/SIAN-Julia) or transforming all the parameters to states with zero derivative
+└ @ StructuralIdentifiability C:\Users\abdallah\.julia\packages\StructuralIdentifiability\p9gdd\src\global_identifiability.jl:121
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+Hong et al. Example 2.14: assess_identifiability (warnings shown)
+========================================================================
+  x(t)                         => globally
+  a                            => globally
+
+========================================================================
+Hong et al. Example 2.14: find_identifiable_functions (warnings shown)
+========================================================================
+  a
+
+========================================================================
+Hong et al. Example 2.14: local test, single-experiment (:SE) and multi-experiment (:ME)
+========================================================================
+  a                            => true
+  a                            => true
+  second return value (num_exp): 1

@@ -1,0 +1,29 @@
+[ Info: Summary of the model:
+[ Info: State variables: x1, x2, z1, z2
+[ Info: Parameters: a01, a12, a21
+[ Info: Inputs: u1, u2
+[ Info: Outputs: yA, yB
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+PK, two conditions, all parameters shared: global identifiability
+========================================================================
+  a01                          => locally
+  a12                          => locally
+  a21                          => globally
+
+========================================================================
+PK, two conditions, condition-specific elimination b01: global identifiability
+========================================================================
+  a01                          => globally
+  b01                          => globally
+  a12                          => globally
+  a21                          => globally
+
+========================================================================
+PK, two conditions, condition-specific elimination b01: identifiable functions
+========================================================================
+  b01
+  a21
+  a12
+  a01

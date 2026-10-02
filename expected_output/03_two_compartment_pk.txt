@@ -1,0 +1,68 @@
+[ Info: Summary of the model:
+[ Info: State variables: x1, x2
+[ Info: Parameters: a01, a12, a21
+[ Info: Inputs: u
+[ Info: Outputs: y
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+PK, y = x2, input u: global identifiability
+========================================================================
+  x1(t)                        => locally
+  x2(t)                        => globally
+  a01                          => locally
+  a12                          => locally
+  a21                          => globally
+
+========================================================================
+PK, y = x2: symmetric combinations
+========================================================================
+  a01 + a12                    => globally
+  a01*a12                      => globally
+
+========================================================================
+PK, y = x2: identifiable functions
+========================================================================
+  a21
+  a01 + a12
+  a01*a12
+
+========================================================================
+PK, y = x1, input b*u: global identifiability
+========================================================================
+  x1(t)                        => globally
+  x2(t)                        => globally
+  a01                          => globally
+  a12                          => globally
+  a21                          => globally
+  b                            => globally
+
+========================================================================
+PK, y = x1, input b*u: identifiable functions
+========================================================================
+  b
+  a21
+  a12
+  a01
+
+========================================================================
+PK, no input, y = x2: global identifiability and identifiable functions
+========================================================================
+  x1(t)                        => nonidentifiable
+  x2(t)                        => globally
+  a01                          => nonidentifiable
+  a12                          => nonidentifiable
+  a21                          => nonidentifiable
+  a01 + a12 + a21
+  a01*a12
+
+========================================================================
+PK, no input, y = x1: global identifiability and identifiable functions
+========================================================================
+  x1(t)                        => globally
+  x2(t)                        => nonidentifiable
+  a01                          => nonidentifiable
+  a12                          => nonidentifiable
+  a21                          => nonidentifiable
+  a01 + a12 + a21
+  a01*a12

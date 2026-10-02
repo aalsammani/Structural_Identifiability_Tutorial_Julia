@@ -1,0 +1,76 @@
+[ Info: Summary of the model:
+[ Info: State variables: S, E, I, H, R
+[ Info: Parameters: beta, eta, gamma, rho, sigma
+[ Info: Inputs: 
+[ Info: Outputs: y1
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+SEIR-H, y1 = eta*I: global identifiability
+========================================================================
+  S(t)                         => nonidentifiable
+  E(t)                         => nonidentifiable
+  I(t)                         => nonidentifiable
+  H(t)                         => nonidentifiable
+  R(t)                         => nonidentifiable
+  beta                         => nonidentifiable
+  eta                          => nonidentifiable
+  gamma                        => nonidentifiable
+  rho                          => nonidentifiable
+  sigma                        => locally
+
+========================================================================
+SEIR-H, y1 = eta*I: identifiable functions
+========================================================================
+  eta + gamma + sigma
+  beta//eta
+  eta*sigma + gamma*sigma
+
+========================================================================
+SEIR-H, y1 = eta*I, y2 = beta*S*I: global identifiability
+========================================================================
+  S(t)                         => globally
+  E(t)                         => locally
+  I(t)                         => locally
+  H(t)                         => nonidentifiable
+  R(t)                         => nonidentifiable
+  beta                         => locally
+  eta                          => locally
+  gamma                        => locally
+  rho                          => nonidentifiable
+  sigma                        => locally
+
+========================================================================
+SEIR-H, y1 = eta*I, y2 = beta*S*I: identifiable functions
+========================================================================
+  eta + gamma + sigma
+  gamma*sigma
+  eta*sigma
+  beta*sigma
+
+========================================================================
+SEIR-H, y1 = eta*I, y2 = beta*S*I, sigma fixed at 1/5: global identifiability
+========================================================================
+  R(t)                         => nonidentifiable
+  H(t)                         => nonidentifiable
+  I(t)                         => globally
+  E(t)                         => globally
+  S(t)                         => globally
+  beta                         => globally
+  eta                          => globally
+  gamma                        => globally
+  rho                          => nonidentifiable
+
+========================================================================
+SEIR-H, y1 = eta*I, y2 = beta*S*I, y3 = H: global identifiability
+========================================================================
+  S(t)                         => globally
+  E(t)                         => locally
+  I(t)                         => locally
+  H(t)                         => globally
+  R(t)                         => nonidentifiable
+  beta                         => locally
+  eta                          => locally
+  gamma                        => locally
+  rho                          => globally
+  sigma                        => locally

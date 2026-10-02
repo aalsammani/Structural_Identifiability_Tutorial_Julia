@@ -1,0 +1,81 @@
+[ Info: Summary of the model:
+[ Info: State variables: x
+[ Info: Parameters: k
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, I, R
+[ Info: Parameters: beta, gamma
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: x1, x2
+[ Info: Parameters: a01, a12, a21
+[ Info: Inputs: u
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: x1, x2
+[ Info: Parameters: a01, a12, a21, b
+[ Info: Inputs: u
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: T, I, V
+[ Info: Parameters: beta, c, d_T, delta, p, s
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: T, I, V
+[ Info: Parameters: beta, c, d_T, delta, p, s
+[ Info: Inputs: 
+[ Info: Outputs: y1, y2
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y1, y2
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, E, I, H, R
+[ Info: Parameters: beta, eta, gamma, rho, sigma
+[ Info: Inputs: 
+[ Info: Outputs: y1
+[ Info: Summary of the model:
+[ Info: State variables: S, E, I, H, R
+[ Info: Parameters: beta, eta, gamma, rho, sigma
+[ Info: Inputs: 
+[ Info: Outputs: y1, y2
+[ Info: Summary of the model:
+[ Info: State variables: x
+[ Info: Parameters: p, q
+[ Info: Inputs: 
+[ Info: Outputs: y
+┌ Warning: Assignment to `c` in soft scope is ambiguous because a global variable by the same name exists: `c` will be treated as a new local. Disambiguate by using `local c` to suppress this warning or `global c` to assign to the existing global variable.
+└ @ C:\Users\abdallah\Documents\Research\Indentifiability_Tutorial_with_Julia\Round_2_Revision\02_code\figures\make_figures.jl:88
+Verdict matrix (0 absent, 1 NI, 2 L, 3 G):
+12×20 Matrix{Int64}:
+ 3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+ 0  3  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+ 0  0  0  2  2  3  0  0  0  0  0  0  0  0  0  0  0  0  0  0
+ 0  0  0  3  3  3  3  0  0  0  0  0  0  0  0  0  0  0  0  0
+ 0  3  0  0  0  0  0  1  2  2  1  3  0  0  0  0  0  0  0  0
+ 0  3  0  0  0  0  0  3  2  2  3  3  0  0  0  0  0  0  0  0
+ 0  0  2  0  0  0  0  0  0  0  0  0  3  1  1  2  0  0  0  0
+ 0  0  2  0  0  0  0  0  0  0  0  0  3  2  3  2  0  0  0  0
+ 0  0  3  0  0  0  0  0  0  0  0  0  3  1  1  3  0  0  0  0
+ 0  1  1  0  0  0  0  0  0  0  0  0  0  0  0  0  2  1  1  0
+ 0  2  2  0  0  0  0  0  0  0  0  0  0  0  0  0  2  2  1  0
+ 0  0  0  0  0  0  0  1  0  0  0  0  0  0  0  0  0  0  0  1
+wrote fig_verdict_matrix.pdf
+Panel B: max |x2_A - x2_B| = 1.0702549957386509e-13
+Panel D: max |y_A - y_B| = 7.543271562937548e-14   (max y = 0.05403069368800084)
+Panel D: parameter sets [0.3, 0.5, 0.25, 0.2] and [0.3, 0.25, 0.5, 0.125]; initial states [0.99, 0.01, 0.02] and [0.99, 0.034999999999999996, 0.012499999999999999]
+wrote fig_nonidentifiability.pdf

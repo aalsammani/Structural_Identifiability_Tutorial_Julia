@@ -1,0 +1,72 @@
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+SBMLImporter.jl 4.1.2 | Catalyst.jl 16.4.0
+
+Imported ReactionSystem:
+Model Michaelis-Menten_enzyme_mechanism:
+Unknowns (4): see unknowns(Michaelis-Menten_enzyme_mechanism)
+  S(t)
+  C(t)
+  P(t)
+  E(t)
+Parameters (4): see parameters(Michaelis-Menten_enzyme_mechanism)
+  km1
+  k1
+  k2
+  cell
+Reaction-rate equations:
+  Differential(t, 1)(S(t)) ~ C(t)*km1 - E(t)*S(t)*k1
+  Differential(t, 1)(C(t)) ~ -C(t)*k2 - C(t)*km1 + E(t)*S(t)*k1
+  Differential(t, 1)(P(t)) ~ C(t)*k2
+  Differential(t, 1)(E(t)) ~ C(t)*k2 + C(t)*km1 - E(t)*S(t)*k1
+
+========================================================================
+SBML enzyme model, product P measured: global identifiability
+========================================================================
+  S(t)                         => globally
+  C(t)                         => globally
+  P(t)                         => globally
+  E(t)                         => globally
+  km1                          => globally
+  k1                           => globally
+  k2                           => globally
+  cell                         => globally
+
+========================================================================
+SBML enzyme model, product P measured: identifiable functions
+========================================================================
+  cell
+  k2
+  k1
+  km1
+
+========================================================================
+SBML enzyme model, substrate S and product P measured: global identifiability
+========================================================================
+  S(t)                         => globally
+  C(t)                         => globally
+  P(t)                         => globally
+  E(t)                         => globally
+  km1                          => globally
+  k1                           => globally
+  k2                           => globally
+  cell                         => globally
+
+========================================================================
+SBML enzyme model, complex C measured: global identifiability
+========================================================================
+  S(t)                         => globally
+  C(t)                         => globally
+  P(t)                         => nonidentifiable
+  E(t)                         => globally
+  km1                          => globally
+  k1                           => globally
+  k2                           => globally
+  cell                         => globally
+
+========================================================================
+SBML enzyme model, complex C measured: identifiable functions
+========================================================================
+  cell
+  k2
+  k1
+  km1

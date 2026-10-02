@@ -1,0 +1,44 @@
+[ Info: Summary of the model:
+[ Info: State variables: x
+[ Info: Parameters: k
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, I, R
+[ Info: Parameters: beta, gamma
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: x1, x2
+[ Info: Parameters: a01, a12, a21
+[ Info: Inputs: u
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: T, I, V
+[ Info: Parameters: beta, c, d_T, delta, p, s
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, E, I, H, R
+[ Info: Parameters: beta, eta, gamma, rho, sigma
+[ Info: Inputs: 
+[ Info: Outputs: y1, y2
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+Timing of assess_local_identifiability and assess_identifiability (seconds)
+========================================================================
+Model                                 local       global
+Exponential decay                     0.0         0.005
+SIR, y = beta*S*I                     0.002       0.012
+PK, y = x2                            0.0         0.011
+Viral dynamics, y = V                 0.0         0.032
+SIWR, y = incidence                   0.0         0.19
+SEIR-H, y1 = eta*I, y2 = beta*S*I     0.011       0.054
+
+CPU threads: 20 | 12th Gen Intel(R) Core(TM) i9-12900H

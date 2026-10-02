@@ -1,0 +1,12 @@
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+SIWR exchange symmetry checked by simulation
+========================================================================
+Parameter set A (beta_I, gamma, mu, beta_W*xi): [0.3, 0.5, 0.25, 0.2]
+Parameter set B (beta_I, gamma, mu, beta_W*xi): [0.3, 0.25, 0.5, 0.125]
+Initial state A (S, I, beta_W*W): [0.99, 0.01, 0.02]
+Initial state B (S, I, beta_W*W): [0.99, 0.035, 0.0125]
+max |y_A - y_B| on [0, 60]:  7.701478343946633e-14
+max y_A on [0, 60]:          0.054031622958560135
+max |I_A - I_B| on [0, 60]:  0.09058589633176571

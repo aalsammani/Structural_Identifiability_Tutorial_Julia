@@ -1,0 +1,107 @@
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y1, y2
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y
+[ Info: Summary of the model:
+[ Info: State variables: S, I, W, R
+[ Info: Parameters: beta_I, beta_W, gamma, mu, xi
+[ Info: Inputs: 
+[ Info: Outputs: y1, y2
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+SIWR, y = incidence: global identifiability
+========================================================================
+  S(t)                         => globally
+  I(t)                         => locally
+  W(t)                         => nonidentifiable
+  R(t)                         => nonidentifiable
+  beta_I                       => globally
+  beta_W                       => nonidentifiable
+  gamma                        => locally
+  mu                           => locally
+  xi                           => nonidentifiable
+
+========================================================================
+SIWR, y = incidence: identifiable functions
+========================================================================
+  beta_I
+  gamma + mu
+  gamma*mu
+  beta_I*mu + beta_W*xi
+
+========================================================================
+SIWR, y1 = incidence, y2 = W: global identifiability
+========================================================================
+  S(t)                         => globally
+  I(t)                         => locally
+  W(t)                         => globally
+  R(t)                         => nonidentifiable
+  beta_I                       => globally
+  beta_W                       => locally
+  gamma                        => locally
+  mu                           => locally
+  xi                           => globally
+
+========================================================================
+SIWR, y1 = incidence, y2 = W: identifiable functions
+========================================================================
+  xi
+  beta_I
+  gamma + mu
+  gamma*mu
+  beta_I*mu + beta_W*xi
+
+========================================================================
+SIWR, y = I (prevalence): global identifiability
+========================================================================
+  S(t)                         => globally
+  I(t)                         => globally
+  W(t)                         => nonidentifiable
+  R(t)                         => nonidentifiable
+  beta_I                       => globally
+  beta_W                       => nonidentifiable
+  gamma                        => globally
+  mu                           => globally
+  xi                           => nonidentifiable
+
+========================================================================
+SIWR, y = I (prevalence): identifiable functions
+========================================================================
+  mu
+  gamma
+  beta_I
+  beta_W*xi
+
+========================================================================
+SIWR, y1 = I, y2 = W: global identifiability
+========================================================================
+  S(t)                         => globally
+  I(t)                         => globally
+  W(t)                         => globally
+  R(t)                         => nonidentifiable
+  beta_I                       => globally
+  beta_W                       => globally
+  gamma                        => globally
+  mu                           => globally
+  xi                           => globally
+
+========================================================================
+SIWR, y1 = I, y2 = W: identifiable functions
+========================================================================
+  xi
+  mu
+  gamma
+  beta_W
+  beta_I

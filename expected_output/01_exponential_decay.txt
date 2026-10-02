@@ -1,0 +1,23 @@
+[ Info: Summary of the model:
+[ Info: State variables: x
+[ Info: Parameters: k
+[ Info: Inputs: 
+[ Info: Outputs: y
+Julia 1.12.2 | StructuralIdentifiability.jl 0.5.26
+
+========================================================================
+Exponential decay, y = x: local identifiability
+========================================================================
+  x(t)                         => true
+  k                            => true
+
+========================================================================
+Exponential decay, y = x: global identifiability
+========================================================================
+  x(t)                         => globally
+  k                            => globally
+
+========================================================================
+Exponential decay, y = x: identifiable functions
+========================================================================
+  k
